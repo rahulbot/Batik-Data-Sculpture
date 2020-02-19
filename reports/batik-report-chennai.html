@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="report.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/wordcloud.js"></script>
+    <script src="report.js"></script>
+    <title>Chennai: Climate in the News</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="row">
+          <div class="col">
+            <h1>Chennai: Climate in the News</h1>
+          </div>
+        </div>
+      </header>
+      <div class="row">
+        <div class="col">
+          <p class="lead">Using the Media Cloud database, we searched English-language sources published in Chennai. We gathered all stories published in 2017, 2018, and 2019; 371 stories in total.  This included 285,053 total stories. 0.81% mentioned "climate change" or "global warming" in some way (2,301 stories).</p>
+        </div>
+        <div class="col">
+          <div id="chennai-climate-stories-chart" class="piechart"></div>
+          <script>$(function() {piechart("Climate Stories", "chennai-climate-stories-chart", [{"name": "climate stories", "y": 2301, "color": "#300D28"}, {"name": "other stories", "y": 282752, "color": "#cccccc"}], 300)})</script>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div id="chennai-climate-attention-chart" class="linechart">
+            <script>$(function() {linechart("Stories", "chennai-climate-attention-chart", [[1482706800000.0, 3], [1483311600000.0, 7], [1483916400000.0, 9], [1484521200000.0, 16], [1485126000000.0, 18], [1485730800000.0, 21], [1486335600000.0, 6], [1486940400000.0, 8], [1487545200000.0, 13], [1488150000000.0, 14], [1488754800000.0, 1], [1489359600000.0, 15], [1489964400000.0, 12], [1490565600000.0, 13], [1491170400000.0, 10], [1491775200000.0, 5], [1492380000000.0, 10], [1492984800000.0, 10], [1493589600000.0, 12], [1494194400000.0, 10], [1494799200000.0, 11], [1495404000000.0, 13], [1496008800000.0, 24], [1496613600000.0, 18], [1497218400000.0, 6], [1497823200000.0, 8], [1498428000000.0, 11], [1499032800000.0, 9], [1499637600000.0, 38], [1500242400000.0, 9], [1500847200000.0, 13], [1501452000000.0, 11], [1502056800000.0, 10], [1502661600000.0, 8], [1503266400000.0, 9], [1503871200000.0, 30], [1504476000000.0, 10], [1505080800000.0, 23], [1505685600000.0, 8], [1506290400000.0, 5], [1506895200000.0, 13], [1507500000000.0, 12], [1508104800000.0, 6], [1508709600000.0, 8], [1509318000000.0, 15], [1509922800000.0, 32], [1510527600000.0, 10], [1511132400000.0, 10], [1511737200000.0, 13], [1512342000000.0, 20], [1512946800000.0, 10], [1513551600000.0, 12], [1514156400000.0, 7], [1514761200000.0, 15], [1515366000000.0, 5], [1515970800000.0, 25], [1516575600000.0, 10], [1517180400000.0, 21], [1517785200000.0, 12], [1518390000000.0, 15], [1518994800000.0, 12], [1519599600000.0, 7], [1520204400000.0, 7], [1520809200000.0, 17], [1521414000000.0, 15], [1522015200000.0, 14], [1522620000000.0, 8], [1523224800000.0, 13], [1523829600000.0, 11], [1524434400000.0, 6], [1525039200000.0, 15], [1525644000000.0, 11], [1526248800000.0, 6], [1526853600000.0, 19], [1527458400000.0, 11], [1528063200000.0, 32], [1528668000000.0, 8], [1529272800000.0, 8], [1529877600000.0, 10], [1530482400000.0, 12], [1531087200000.0, 15], [1531692000000.0, 11], [1532296800000.0, 15], [1532901600000.0, 12], [1533506400000.0, 7], [1534111200000.0, 10], [1534716000000.0, 18], [1535320800000.0, 13], [1535925600000.0, 7], [1536530400000.0, 12], [1537135200000.0, 18], [1537740000000.0, 16], [1538344800000.0, 10], [1538949600000.0, 31], [1539554400000.0, 6], [1540159200000.0, 10], [1540767600000.0, 7], [1541372400000.0, 12], [1541977200000.0, 15], [1542582000000.0, 3], [1543186800000.0, 15], [1543791600000.0, 7], [1544396400000.0, 10], [1545001200000.0, 10], [1545606000000.0, 16], [1546210800000.0, 5], [1546815600000.0, 27], [1547420400000.0, 4], [1548025200000.0, 8], [1548630000000.0, 5], [1549234800000.0, 8], [1549839600000.0, 10], [1550444400000.0, 7], [1551049200000.0, 5], [1551654000000.0, 4], [1552258800000.0, 6], [1552863600000.0, 11], [1553468400000.0, 7], [1554069600000.0, 8], [1554674400000.0, 7], [1555279200000.0, 3], [1555884000000.0, 12], [1556488800000.0, 11], [1557093600000.0, 13], [1557698400000.0, 12], [1558303200000.0, 8], [1558908000000.0, 13], [1559512800000.0, 33], [1560117600000.0, 19], [1560722400000.0, 18], [1561327200000.0, 74], [1561932000000.0, 53], [1562536800000.0, 52], [1563141600000.0, 41], [1563746400000.0, 22], [1564351200000.0, 29], [1564956000000.0, 37], [1565560800000.0, 15], [1566165600000.0, 39], [1566770400000.0, 20], [1567375200000.0, 22], [1567980000000.0, 12], [1568584800000.0, 35], [1569189600000.0, 47], [1569794400000.0, 44], [1570399200000.0, 32], [1571004000000.0, 26], [1571608800000.0, 10], [1572217200000.0, 29], [1572822000000.0, 24], [1573426800000.0, 17], [1574031600000.0, 22], [1574636400000.0, 34]], 200)})</script>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="card stat">
+            <div class="card-body">
+              <h5 class="card-title">Climate &amp; Resilience</h5>
+              <p class="card-text stat">5%</p>
+              <p class="card-subtitle text-muted">stories about climate change also mention resilience</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card stat">
+            <div class="card-body">
+              <h5 class="card-title">Climate &amp; Security</h5>
+              <p class="card-text stat">4%</p>
+              <p class="card-subtitle text-muted">stories about climate change also mention security</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card stat">
+            <div class="card-body">
+              <h5 class="card-title">Climate &amp; Migration</h5>
+              <p class="card-text stat">3%</p>
+              <p class="card-subtitle text-muted">stories about climate change also mention migration</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h2>Climate and Resilience</h2>
+          <p class="lead">There were 112 stories about climate and resilience. This represents 4.87% of the stories about climate in some way.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div id="chennai-resilience-attention-chart" class="linechart">
+            <script>$(function() {linechart("Resilience Stories", "chennai-resilience-attention-chart", [[1484521200000.0, 2], [1485730800000.0, 1], [1487545200000.0, 8], [1488150000000.0, 3], [1489964400000.0, 1], [1493589600000.0, 4], [1495404000000.0, 1], [1496008800000.0, 1], [1496613600000.0, 1], [1497218400000.0, 4], [1497823200000.0, 1], [1499032800000.0, 1], [1499637600000.0, 2], [1500242400000.0, 2], [1500847200000.0, 1], [1502056800000.0, 1], [1503266400000.0, 1], [1503871200000.0, 1], [1504476000000.0, 1], [1505080800000.0, 1], [1505685600000.0, 2], [1507500000000.0, 1], [1512342000000.0, 1], [1514156400000.0, 1], [1517180400000.0, 1], [1517785200000.0, 3], [1521414000000.0, 1], [1523829600000.0, 2], [1526853600000.0, 1], [1530482400000.0, 1], [1531087200000.0, 1], [1532296800000.0, 2], [1533506400000.0, 1], [1534111200000.0, 1], [1534716000000.0, 3], [1535320800000.0, 1], [1537740000000.0, 2], [1538949600000.0, 2], [1540159200000.0, 1], [1549839600000.0, 2], [1550444400000.0, 1], [1554069600000.0, 2], [1554674400000.0, 1], [1556488800000.0, 1], [1558303200000.0, 3], [1559512800000.0, 8], [1560722400000.0, 1], [1561327200000.0, 3], [1561932000000.0, 1], [1563746400000.0, 1], [1564351200000.0, 3], [1564956000000.0, 5], [1565560800000.0, 1], [1567375200000.0, 1], [1568584800000.0, 3], [1569189600000.0, 2], [1569794400000.0, 2], [1570399200000.0, 2], [1572217200000.0, 1], [1572822000000.0, 1], [1574636400000.0, 2]], 200)})</script>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h3>Top Words</h3>
+          <p class="headline">Here are the top 100 words used in articles about climate and resilience.</p>
+          <div id="chennai-resilience-top-words" class="wordcloud"></div>
+          <script>$(function() {wordcloud("chennai-resilience-top-words", [{"name": "india", "weight": 117}, {"name": "floods", "weight": 55}, {"name": "global", "weight": 41}, {"name": "vulnerable", "weight": 39}, {"name": "adaptation", "weight": 37}, {"name": "sustainable", "weight": 32}, {"name": "infrastructure", "weight": 32}, {"name": "indian", "weight": 32}, {"name": "coastal", "weight": 32}, {"name": "economic", "weight": 29}, {"name": "impacts", "weight": 28}, {"name": "corridor", "weight": 28}, {"name": "foundation", "weight": 26}, {"name": "adb", "weight": 26}, {"name": "surat", "weight": 25}, {"name": "disasters", "weight": 24}, {"name": "tamil", "weight": 23}, {"name": "nadu", "weight": 23}, {"name": "km", "weight": 23}, {"name": "risks", "weight": 22}, {"name": "corporation", "weight": 22}, {"name": "agriculture", "weight": 22}, {"name": "centre", "weight": 21}, {"name": "biodiversity", "weight": 21}, {"name": "sector", "weight": 19}, {"name": "rainfall", "weight": 19}, {"name": "mumbai", "weight": 19}, {"name": "paris", "weight": 18}, {"name": "institute", "weight": 18}, {"name": "agreement", "weight": 18}, {"name": "warming", "weight": 17}, {"name": "mitigation", "weight": 17}, {"name": "emissions", "weight": 17}, {"name": "cyclone", "weight": 17}, {"name": "scientists", "weight": 16}, {"name": "mainstream", "weight": 16}, {"name": "strengthening", "weight": 15}, {"name": "greenhouse", "weight": 15}, {"name": "rs", "weight": 14}, {"name": "monsoon", "weight": 14}, {"name": "100rc", "weight": 14}, {"name": "university", "weight": 13}, {"name": "solutions", "weight": 13}, {"name": "programme", "weight": 13}, {"name": "nations", "weight": 13}, {"name": "delhi", "weight": 13}, {"name": "ramesh", "weight": 12}, {"name": "implemented", "weight": 12}, {"name": "crore", "weight": 12}, {"name": "city's", "weight": 12}, {"name": "pune", "weight": 11}, {"name": "organised", "weight": 11}, {"name": "initiatives", "weight": 11}, {"name": "emerging", "weight": 11}, {"name": "drought", "weight": 11}, {"name": "challenges", "weight": 11}, {"name": "visakhapatnam-chennai", "weight": 10}, {"name": "usd", "weight": 10}, {"name": "united", "weight": 10}, {"name": "trump", "weight": 10}, {"name": "tackle", "weight": 10}, {"name": "studies", "weight": 10}, {"name": "stakeholders", "weight": 10}, {"name": "professor", "weight": 10}, {"name": "minister", "weight": 10}, {"name": "investments", "weight": 10}, {"name": "scenarios", "weight": 9}, {"name": "innovation", "weight": 9}, {"name": "framework", "weight": 9}, {"name": "ecosystem", "weight": 9}, {"name": "assam", "weight": 9}, {"name": "visakhapatnam", "weight": 8}, {"name": "rockefeller", "weight": 8}, {"name": "pact", "weight": 8}, {"name": "mayors", "weight": 8}, {"name": "livelihoods", "weight": 8}, {"name": "inauguration", "weight": 8}, {"name": "governance", "weight": 8}, {"name": "environmental", "weight": 8}, {"name": "crisis", "weight": 8}, {"name": "budgets", "weight": 8}, {"name": "zone", "weight": 7}, {"name": "world's", "weight": 7}, {"name": "urbanisation", "weight": 7}, {"name": "swaminathan", "weight": 7}, {"name": "surge", "weight": 7}, {"name": "ramachandran", "weight": 7}, {"name": "odisha", "weight": 7}, {"name": "kolkata", "weight": 7}, {"name": "jaipur", "weight": 7}, {"name": "groundwater", "weight": 7}, {"name": "economy", "weight": 7}, {"name": "conservation", "weight": 7}, {"name": "chennai-based", "weight": 7}, {"name": "aims", "weight": 7}, {"name": "2,500-", "weight": 7}, {"name": "threats", "weight": 6}, {"name": "talks", "weight": 6}, {"name": "shukla", "weight": 6}, {"name": "reservoirs", "weight": 6}], 300)})</script>
+        </div>
+        <div class="col">
+          <h3>Top Themes</h3>
+          <p class="headline">Here are the top "themes" detected by our computational model in stories about climate and resilience.<table class="table"><thead><tr><th>Theme</th><th>Percent of Stories</th></tr></thead><tbody><tr><td>weather</td><td>30%</td></tr><tr><td>environment</td><td>29%</td></tr><tr><td>global warming</td><td>27%</td></tr><tr><td>economic conditions and trends</td><td>27%</td></tr><tr><td>floods</td><td>21%</td></tr><tr><td>finances</td><td>16%</td></tr><tr><td>water</td><td>16%</td></tr></tbody></table></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h2>Climate and Security</h2>
+          <p class="lead">There were 95 stories about climate and security. This represents 4.13% of the stories about climate in some way.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div id="chennai-security-attention-chart" class="linechart">
+            <script>$(function() {linechart("Security Stories", "chennai-security-attention-chart", [[1484521200000.0, 1], [1485730800000.0, 1], [1486940400000.0, 4], [1488150000000.0, 3], [1489964400000.0, 1], [1494194400000.0, 1], [1496008800000.0, 1], [1496613600000.0, 1], [1497823200000.0, 1], [1499032800000.0, 1], [1499637600000.0, 21], [1500242400000.0, 2], [1500847200000.0, 1], [1501452000000.0, 1], [1503266400000.0, 1], [1503871200000.0, 1], [1505080800000.0, 4], [1511737200000.0, 1], [1514156400000.0, 1], [1514761200000.0, 1], [1515970800000.0, 1], [1521414000000.0, 1], [1523224800000.0, 3], [1524434400000.0, 1], [1525039200000.0, 1], [1526853600000.0, 1], [1529272800000.0, 2], [1531087200000.0, 2], [1532296800000.0, 1], [1532901600000.0, 1], [1533506400000.0, 2], [1534716000000.0, 2], [1535320800000.0, 1], [1536530400000.0, 2], [1537740000000.0, 1], [1541372400000.0, 1], [1545001200000.0, 1], [1549839600000.0, 1], [1551654000000.0, 1], [1558303200000.0, 3], [1560722400000.0, 1], [1561327200000.0, 3], [1561932000000.0, 1], [1562536800000.0, 1], [1563141600000.0, 2], [1564956000000.0, 2], [1566165600000.0, 1], [1566770400000.0, 1], [1567375200000.0, 2], [1567980000000.0, 1], [1568584800000.0, 1], [1573426800000.0, 1], [1574636400000.0, 2]], 200)})</script>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h3>Top Words</h3>
+          <p class="headline">Here are the top 100 words used in articles about climate and security.</p>
+          <div id="chennai-security-top-words" class="wordcloud"></div>
+          <script>$(function() {wordcloud("chennai-security-top-words", [{"name": "india", "weight": 113}, {"name": "asia", "weight": 64}, {"name": "global", "weight": 52}, {"name": "pacific", "weight": 38}, {"name": "floods", "weight": 35}, {"name": "agriculture", "weight": 33}, {"name": "cooperation", "weight": 31}, {"name": "prc", "weight": 30}, {"name": "devastating", "weight": 29}, {"name": "minister", "weight": 27}, {"name": "mumbai", "weight": 26}, {"name": "economic", "weight": 26}, {"name": "institute", "weight": 25}, {"name": "delhi", "weight": 25}, {"name": "sustainable", "weight": 23}, {"name": "indian", "weight": 21}, {"name": "ensuring", "weight": 21}, {"name": "asian", "weight": 21}, {"name": "adb", "weight": 20}, {"name": "paris", "weight": 19}, {"name": "defence", "weight": 19}, {"name": "economy", "weight": 18}, {"name": "droughts", "weight": 18}, {"name": "adaptation", "weight": 18}, {"name": "southern", "weight": 17}, {"name": "rice", "weight": 17}, {"name": "projecting", "weight": 17}, {"name": "kolkata", "weight": 17}, {"name": "crisis", "weight": 17}, {"name": "coastal", "weight": 17}, {"name": "titled", "weight": 16}, {"name": "swaminathan", "weight": 16}, {"name": "resilience", "weight": 15}, {"name": "migration", "weight": 15}, {"name": "china", "weight": 15}, {"name": "yields", "weight": 14}, {"name": "severely", "weight": 14}, {"name": "reverse", "weight": 14}, {"name": "nuclear", "weight": 14}, {"name": "mitigation", "weight": 14}, {"name": "2030s", "weight": 14}, {"name": "vulnerable", "weight": 13}, {"name": "unabated", "weight": 13}, {"name": "sectors", "weight": 13}, {"name": "nutrition", "weight": 13}, {"name": "modeling", "weight": 13}, {"name": "japan", "weight": 13}, {"name": "foundation", "weight": 13}, {"name": "agreement", "weight": 13}, {"name": "wheat", "weight": 12}, {"name": "poll", "weight": 12}, {"name": "pik", "weight": 12}, {"name": "livelihoods", "weight": 12}, {"name": "indonesia", "weight": 12}, {"name": "hyderabad", "weight": 12}, {"name": "degrade", "weight": 12}, {"name": "challenges", "weight": 12}, {"name": "strategies", "weight": 11}, {"name": "scientist", "weight": 11}, {"name": "risks", "weight": 11}, {"name": "potsdam", "weight": 11}, {"name": "pakistan", "weight": 11}, {"name": "jakarta", "weight": 11}, {"name": "elections", "weight": 11}, {"name": "commitment", "weight": 11}, {"name": "voter", "weight": 10}, {"name": "strengthening", "weight": 10}, {"name": "prosperity", "weight": 10}, {"name": "impacts", "weight": 10}, {"name": "enhancing", "weight": 10}, {"name": "country's", "weight": 10}, {"name": "zones", "weight": 9}, {"name": "zhanjiang", "weight": 9}, {"name": "xiamen", "weight": 9}, {"name": "world's", "weight": 9}, {"name": "welcomed", "weight": 9}, {"name": "unavoidable", "weight": 9}, {"name": "tianjin", "weight": 9}, {"name": "thailand", "weight": 9}, {"name": "surat", "weight": 9}, {"name": "shenzhen", "weight": 9}, {"name": "renewable", "weight": 9}, {"name": "nagoya", "weight": 9}, {"name": "minh", "weight": 9}, {"name": "maritime", "weight": 9}, {"name": "ipcc", "weight": 9}, {"name": "implementation", "weight": 9}, {"name": "ho", "weight": 9}, {"name": "dialogue", "weight": 9}, {"name": "chi", "weight": 9}, {"name": "bengaluru", "weight": 9}, {"name": "bangkok", "weight": 9}, {"name": "asean", "weight": 9}, {"name": "warming", "weight": 8}, {"name": "university", "weight": 8}, {"name": "terrorism", "weight": 8}, {"name": "surveys", "weight": 8}, {"name": "studies", "weight": 8}, {"name": "respondents", "weight": 8}, {"name": "ramesh", "weight": 8}], 300)})</script>
+        </div>
+        <div class="col">
+          <h3>Top Themes</h3>
+          <p class="headline">Here are the top "themes" detected by our computational model in stories about climate and security.<table class="table"><thead><tr><th>Theme</th><th>Percent of Stories</th></tr></thead><tbody><tr><td>economic conditions and trends</td><td>39%</td></tr><tr><td>weather</td><td>25%</td></tr><tr><td>politics and government</td><td>23%</td></tr><tr><td>environment</td><td>22%</td></tr><tr><td>agriculture</td><td>14%</td></tr><tr><td>water</td><td>12%</td></tr><tr><td>global warming</td><td>11%</td></tr></tbody></table></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h2>Climate and Migration</h2>
+          <p class="lead">There were 67 stories about climate and migration. This represents 2.91% of the stories about climate in some way.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div id="chennai-migration-attention-chart" class="linechart">
+            <script>$(function() {linechart("Migration Stories", "chennai-migration-attention-chart", [[1483311600000.0, 2], [1492380000000.0, 5], [1492984800000.0, 3], [1493589600000.0, 3], [1498428000000.0, 1], [1500242400000.0, 2], [1501452000000.0, 3], [1503871200000.0, 1], [1505080800000.0, 1], [1508104800000.0, 1], [1517785200000.0, 1], [1521414000000.0, 1], [1523829600000.0, 1], [1525644000000.0, 1], [1526248800000.0, 1], [1528063200000.0, 2], [1529272800000.0, 2], [1530482400000.0, 3], [1533506400000.0, 1], [1535925600000.0, 1], [1537135200000.0, 2], [1538949600000.0, 1], [1539554400000.0, 2], [1543791600000.0, 1], [1552258800000.0, 1], [1554069600000.0, 2], [1559512800000.0, 1], [1561327200000.0, 6], [1562536800000.0, 2], [1563746400000.0, 1], [1564956000000.0, 8], [1565560800000.0, 1], [1566770400000.0, 2], [1572217200000.0, 2], [1573426800000.0, 2]], 200)})</script>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h3>Top Words</h3>
+          <p class="headline">Here are the top 100 words used in articles about climate and migration.</p>
+          <div id="chennai-migration-top-words" class="wordcloud"></div>
+          <script>$(function() {wordcloud("chennai-migration-top-words", [{"name": "india", "weight": 59}, {"name": "crisis", "weight": 56}, {"name": "global", "weight": 36}, {"name": "asia", "weight": 36}, {"name": "floods", "weight": 31}, {"name": "drought", "weight": 30}, {"name": "mumbai", "weight": 20}, {"name": "migrants", "weight": 20}, {"name": "karnataka", "weight": 20}, {"name": "pacific", "weight": 18}, {"name": "world's", "weight": 16}, {"name": "vulnerable", "weight": 15}, {"name": "slum", "weight": 15}, {"name": "paris", "weight": 15}, {"name": "scientists", "weight": 14}, {"name": "parched", "weight": 14}, {"name": "hotspots", "weight": 14}, {"name": "bengaluru", "weight": 14}, {"name": "minister", "weight": 13}, {"name": "institute", "weight": 13}, {"name": "agreement", "weight": 13}, {"name": "warming", "weight": 12}, {"name": "trump", "weight": 12}, {"name": "rainfall", "weight": 12}, {"name": "immigration", "weight": 12}, {"name": "elections", "weight": 12}, {"name": "delhi", "weight": 12}, {"name": "china", "weight": 12}, {"name": "livelihoods", "weight": 11}, {"name": "emissions", "weight": 11}, {"name": "distress", "weight": 11}, {"name": "agriculture", "weight": 11}, {"name": "adb", "weight": 11}, {"name": "adaptation", "weight": 11}, {"name": "kolkata", "weight": 10}, {"name": "indian", "weight": 10}, {"name": "children", "weight": 10}, {"name": "america", "weight": 10}, {"name": "africa", "weight": 10}, {"name": "tamil", "weight": 9}, {"name": "sustainable", "weight": 9}, {"name": "reels", "weight": 9}, {"name": "nadu", "weight": 9}, {"name": "manifestation", "weight": 9}, {"name": "brishti", "weight": 9}, {"name": "bangladesh", "weight": 9}, {"name": "voter", "weight": 8}, {"name": "unofficial", "weight": 8}, {"name": "titled", "weight": 8}, {"name": "surat", "weight": 8}, {"name": "scenarios", "weight": 8}, {"name": "rationing", "weight": 8}, {"name": "pradesh", "weight": 8}, {"name": "poll", "weight": 8}, {"name": "nagapattinam", "weight": 8}, {"name": "mitigation", "weight": 8}, {"name": "ministry", "weight": 8}, {"name": "kerala", "weight": 8}, {"name": "ipcc", "weight": 8}, {"name": "environmental", "weight": 8}, {"name": "dwellers", "weight": 8}, {"name": "disrupt", "weight": 8}, {"name": "brace", "weight": 8}, {"name": "beg", "weight": 8}, {"name": "strauss", "weight": 7}, {"name": "shortage", "weight": 7}, {"name": "respondents", "weight": 7}, {"name": "refugees", "weight": 7}, {"name": "projected", "weight": 7}, {"name": "professor", "weight": 7}, {"name": "pakistan", "weight": 7}, {"name": "modi", "weight": 7}, {"name": "korea's", "weight": 7}, {"name": "intergovernmental", "weight": 7}, {"name": "inclusive", "weight": 7}, {"name": "exacerbate", "weight": 7}, {"name": "economic", "weight": 7}, {"name": "coastal", "weight": 7}, {"name": "ceo", "weight": 7}, {"name": "bengal", "weight": 7}, {"name": "activist", "weight": 7}, {"name": "warmer", "weight": 6}, {"name": "university", "weight": 6}, {"name": "studied", "weight": 6}, {"name": "singh", "weight": 6}, {"name": "shocks", "weight": 6}, {"name": "scarcity", "weight": 6}, {"name": "researchers", "weight": 6}, {"name": "prompting", "weight": 6}, {"name": "priority", "weight": 6}, {"name": "organisation", "weight": 6}, {"name": "oceans", "weight": 6}, {"name": "nuclear", "weight": 6}, {"name": "monsoon", "weight": 6}, {"name": "in-migration", "weight": 6}, {"name": "implementation", "weight": 6}, {"name": "hyderabad", "weight": 6}, {"name": "groundswell", "weight": 6}, {"name": "forcing", "weight": 6}, {"name": "donald", "weight": 6}], 300)})</script>
+        </div>
+        <div class="col">
+          <h3>Top Themes</h3>
+          <p class="headline">Here are the top "themes" detected by our computational model in stories about climate and migration.<table class="table"><thead><tr><th>Theme</th><th>Percent of Stories</th></tr></thead><tbody><tr><td>water</td><td>33%</td></tr><tr><td>drought</td><td>30%</td></tr><tr><td>weather</td><td>24%</td></tr><tr><td>politics and government</td><td>19%</td></tr><tr><td>floods</td><td>19%</td></tr><tr><td>economic conditions and trends</td><td>19%</td></tr><tr><td>global warming</td><td>13%</td></tr></tbody></table></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

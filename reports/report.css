@@ -1,0 +1,47 @@
+body {
+    margin-top: 20px;
+}
+
+p.stat {
+    font-size: 36px;
+}
+
+p.card-subtitle {
+    font-size: 12px;
+}
+
+.piechart {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.linechart {
+    margin-bottom: 20px;
+    display: block;
+}
+
+h1 { 
+    color: #300D28;
+    background-color: #cccccc;
+    padding: 20px 10px;
+    border-bottom: 1px solid #70615C;
+}
+
+h2 {
+    color: #300D28;
+    margin-top: 40px;
+    padding: 10px 5px;
+    border-bottom: 1px solid #70615C;
+}
+
+h3 {
+    color: #300D28;
+}
+
+hr {
+    color: #70615C;
+}
+
+.wordcloud {
+    display: block;
+}
