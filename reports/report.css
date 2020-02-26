@@ -2,6 +2,10 @@ body {
     margin-top: 20px;
 }
 
+.stat {
+    margin-bottom: 15px;
+}
+
 p.stat {
     font-size: 36px;
 }

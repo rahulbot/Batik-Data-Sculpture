@@ -45,6 +45,7 @@ function linechart(seriesName, divId, data, chartHeight) {
             name: seriesName,
             data: data,
             color: '#300D28',
+            animation: false,
         }]
     });
 }
@@ -54,6 +55,7 @@ function linechart(seriesName, divId, data, chartHeight) {
 function wordcloud(divId, data) {
     Highcharts.chart(divId, {
         series: [{
+            animation: false,
             colors: ['#70615C'],
             rotation: {
                 from: 0,
